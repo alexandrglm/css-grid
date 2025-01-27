@@ -27,57 +27,136 @@
             justify-content: center;
         }
 
-        .content-wrapper {
+        .contentWrapper {
             width: 660px;
         }
 
         .styleDetails {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            margin: 75px 0 75px 0;
+            grid-gap: 20px;
         }
 
         .styleDetailsLogo img {
             width: 100%;
         }
+        
+        .styleDetailsText {
+            text-align: right;
+        }
 
+        .styleDetailsText div {
+            color: #808080;
+            font-weight: normal;
+        }
+
+        .styleDetailsText h3 {
+            margin: 30px 0 10px 0;
+        }
+
+
+        .dosDontsWrapper {
+            margin: 75px 0 75px 0;
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr;
+            grid-gap: 30px;
+        }
+
+        .dontsImages img {
+            width: 50%;
+        }
     </style>
 </head>
 <body>
     <div class="container">
 
-        <div class="content-wrapper">
+        <div class="contentWrapper">
 
-            <h2> Branding Guidelines</h2>
+            <h2>Branding Guidelines</h2>
 
-            <p>This is a grid container. It has its own div section inside the .class container section. And now, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis maximus vulputate. Donec in odio id mi laoreet elementum porttitor at dui. Nulla venenatis tempor lorem, et sodales elit eleifend eget. Nunc euismod magna ligula, vitae lacinia lectus auctor nec. Pellentesque nec ex a tortor laoreet pellentesque et pharetra nulla. Maecenas fermentum massa id lacus vestibulum pretium. Cras ac libero semper, fringilla est eu, scelerisque nulla. Maecenas et mollis lacus. Sed sed massa sit amet nibh luctus bibendum id ut lectus. Aenean blandit tincidunt nibh, dictum egestas risus aliquam quis. Nam nunc erat, tincidunt at diam eu, sodales tempor leo. Praesent tincidunt ipsum non lectus feugiat tempor. Ut a velit quis orci faucibus finibus sed non mauris. Aliquam sit amet tempor dolor. </p>
+            <p>
+                This is a grid container. It has its own div section inside the .class container section. 
+                And now, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce mollis maximus vulputate. 
+                Donec in odio id mi laoreet elementum porttitor at dui.
+            </p>
+            
+            <p>
+                Nulla venenatis tempor lorem, et sodales elit eleifend eget. Nunc euismod magna ligula, 
+                vitae lacinia lectus auctor nec. Pellentesque nec ex a tortor laoreet pellentesque et pharetra nulla. 
+                Maecenas fermentum massa id lacus vestibulum pretium. Cras ac libero semper, fringilla est eu, 
+                scelerisque nulla. Maecenas et mollis lacus. Sed sed massa sit amet nibh luctus bibendum id ut lectus. 
+                Aenean blandit tincidunt nibh, dictum egestas risus aliquam quis. Nam nunc erat, tincidunt at diam eu, 
+                sodales tempor leo. Praesent tincidunt ipsum non lectus feugiat tempor. Ut a velit quis orci faucibus 
+                finibus sed non mauris. Aliquam sit amet tempor dolor.
+            </p>
+            
+            <p>
+                Nullam id efficitur arcu. Integer scelerisque scelerisque est non congue. Integer fermentum hendrerit dui, 
+                eu placerat mi mollis vitae.
+            </p>
+            
+            <div class="styleDetails">
+                <div class="styleDetailsText">
+                    <h3>Primary Logo</h3>
+                    <div>White Space = 1/4 logo width</div>
+                    <div>White logo on primary blue</div>
 
-            <p>Duis scelerisque felis id neque lobortis accumsan. Etiam maximus urna odio, at vehicula lectus euismod sit amet. Sed mattis erat eu elit tempor, at porta eros blandit. Etiam a lectus ornare, pretium ante ac, fermentum diam. Morbi nec ipsum eu augue aliquam pellentesque. Nullam eget dignissim eros. Vestibulum laoreet metus quis augue tempus, rhoncus facilisis orci luctus. Aliquam in est posuere, laoreet nunc et, efficitur turpis. Donec urna eros, congue at eleifend nec, consectetur sed leo. Donec orci libero, dignissim nec auctor non, ullamcorper in risus. Etiam sit amet mollis tellus, a tempus ipsum. Phasellus sit amet laoreet erat. Nullam id efficitur arcu. Integer scelerisque scelerisque est non congue. Integer fermentum hendrerit dui, eu placerat mi mollis vitae.</p>
+                    <h3>Primary Color</h3>
+                    <div>#0079FF</div>
+                    <div>RGB 0, 121, 255</div>
 
-            <p>Sed pulvinar viverra nulla, quis euismod dolor egestas et. Phasellus nec feugiat nibh, quis lacinia turpis. Proin et rhoncus nisi. Vestibulum sollicitudin, tellus nec porttitor sodales, tortor mi consequat nisi, nec fringilla sem risus vitae ante. Nullam odio mauris, cursus nec sapien eu, consequat fringilla neque. Mauris sagittis accumsan turpis vitae suscipit. Duis non felis enim. Vivamus sed tincidunt erat, eget efficitur erat. Donec ornare tortor urna, sit amet elementum eros tristique maximus. Nullam dapibus ac tellus quis dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum quis ligula sit amet metus ullamcorper faucibus. In eu aliquam tellus.</p>
+                    <h3>Name</h3>
+                    <div>Capitalize “D” and “S”</div>
+                    <div>No space between the words</div>
+                </div>
 
-
-        </div>
-        <div class="styleDetails">
-            <div class="styleDetailsText">
-                <h3>Primary Logo</h3>
-                <div>white Space = 1/4 logo width</div>
-                <div>white logo on primary blue</div>
-
-                <h3>Primary Color</h3> 
-                <div>#0079FF</div>
-                <div>RGB 0, 121, 255</div>
-                
-                <h3>Name</h3>
-                <div>Capitalize "D" and "S"</div>
-                <div>No Space between the words</div>           
+                <div class="styleDetailsLogo">
+                    <img src="images/logo-with-margin.png" alt="Primary Logo">
+                </div>
             </div>
-            <div class="styleDetailsLogo">
-                <img src="./aLogo.png" alt="This is not the intended logo">
-                
+        
+            <div class="dosDontsWrapper">
+                <div class="dosDontsList">
+                    <div>Logo Do's</div>
+                    <ul>
+                        <li>Provide adequate white space surrounding the logo.</li>
+                        <li>Icon must always be white</li>
+                        <li>Keep a large size so the icon doesn't get obscured.</li>
+                        <li>Place logo on white or light background colors</li>
+                    </ul>
+                </div>
+        
+                <div class="dosDontsList">
+                    <div>Logo Dont`s</div>
+                    <ul>
+                        <li>Stretch or scale the logo non-uniformly</li>
+                        <li>Crop or partially cover the logo with other objects</li>
+                        <li>Alter the logo or wordmark color to anything other than our primary color</li>
+                    </ul>
+                </div>
+        
+                <div class="dontsImages">
+                    <div class="dontImageBox">
+                        <img src="images/dont_stretch.png" alt="Don't Stretch">
+                        <div>Stretch</div>
+                    </div>
+        
+                    <div class="dontsImageBox">
+                        <img src="images/dont_crop.png" alt="Don't Crop">
+                        <div>Crop</div>
+                    </div>
+        
+                    <div class="dontsImageBox">
+                        <img src="images/dont_color.png" alt="Don't Change Color">
+                        <div>Color</div>
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </div>
-    
 </body>
+
 </html>
