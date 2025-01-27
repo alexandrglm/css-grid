@@ -63,9 +63,6 @@
             grid-gap: 30px;
         }
 
-        .dontsImages img {
-            width: 50%;
-        }
 
         .dosDontsHeading {
             font-weight: 900;
@@ -80,15 +77,62 @@
             color: #dc000d;
         }
 
-        .dosDontsList li {
+        .dosDontsList li,
+        .alternateOptionsWrapper li {
             font-size: 16px;
             margin: 30px 0 30px 0;
         }
 
+        .dontImageBox img {
+            width: 50%;
+        }
         .dontImageBox div {
             font-size: 14px;
             color: #999;
         }
+      
+        .alternateOptionsWrapper {
+            margin: 75px 0 75px 0;
+        }
+
+        .alternateOptionsWrapper h3 {
+            color: #999999;
+            font-size: 18px;
+            font-weight: 900;
+        }
+
+        /* .alternateOptionsWrapper li {
+
+        }*/ 
+
+        .alternateOptionsImages {
+            margin: 80px 0 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            grid-gap: 100px 400px;
+
+        }
+        .textLogos {
+            width: 90%;
+        }
+        .imageLogos {
+            width: 60%;
+        }
+
+        .additionalBrandingDetails {
+            margin: 75px 0 75px;
+        }
+
+        .additionalBrandingDetails a {
+            color: #4fb8e8;
+            font-size: 19px;
+        }
+
+        .additionalBrandingDetails p {
+            margin: 0 0 42px 0;
+        }
+
     </style>
 </head>
 <body>
@@ -154,7 +198,7 @@
         
                 <div class="dosDontsList">
                     <div class="dosDontsHeading blueText">
-                        Logo Do's
+                        Logo Dont's
                     </div>
                     <ul>
                         <li>Stretch or scale the logo non-uniformly</li>
@@ -181,29 +225,37 @@
                 </div>
             </div>
 
-            <div class=".alternateOptionsWrapper">
-                Alternate Options
-            </div>
+            <div class="alternateOptionsWrapper">
+                <h3>Alternate Options</h3>
 
             <ul>
-                <li></li>
+                <li>The circular badge can be used separately from the wordmark.</li>
+                <li>The icon may be extracted from the logo and applied separately - but it must remain white and have a background
+                    of our primary blue color</li>
+                <li>The wordmark may be used separately from the circular badge.</li>
+                <li>Logo Do's and Do Not's above still apply</li>
             </ul>
 
-            <div class="alternateLogoImages">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+            </div>
+
+            <div class="alternateOptionsImages">
+                <img class="imageLogos" src="./images/ds_circle_logo.png" alt="">
+                <img class="imageLogos" src="./images/ds_square_logo.png" alt="">
+                <img class="textLogos" src="./images/ds_icon_text_logo.png" alt="">
+                <img class="textLogos" src="./images/ds_text_logo.png" alt="">
             </div>
             
             <div class="additionalBrandingDetails">
-                Assets Download
+                <h3>Asset Download</h3>
                 <p>
-                    <a href="">Download .Zip file</a>
+                    <a href="#">Download .zip file.</a>
                 </p>
-
+            
                 <h3>Usage</h3>
-                <p> Please remember ....</p>
+            
+                <p>
+                    Please remember to adhere to the above guidelines when referencing and using our logos. If you are unsure of the correct protocol for a particular use case, feel free to ask us at the following email: support@dailysmarty.com.
+                </p>
             </div>
         
         </div>
